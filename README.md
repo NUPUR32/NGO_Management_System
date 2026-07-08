@@ -164,34 +164,6 @@ http://localhost/NGO_Management_System/
 
 ---
 
-# 📸 Screenshots
-
-## Home Page
-
-![Home](images/home.png)
-
-## Login Page
-
-![Login](images/login.png)
-
-## Admin Dashboard
-
-![Dashboard](images/admin-dashboard.png)
-
-## Donor Dashboard
-
-![Donor Dashboard](images/donor-dashboard.png)
-
-## Donation Management
-
-![Donation](images/donation-management.png)
-
-## Reports
-
-![Reports](images/report.png)
-
----
-
 # 📈 Future Improvements
 
 - Online Payment Gateway
