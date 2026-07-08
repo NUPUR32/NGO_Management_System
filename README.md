@@ -196,7 +196,7 @@ This project was developed during my internship at **SpaceECE India Foundation**
 
 # 👩‍💻 Author
 
-**Nupur Joon**
+**Nnupur**
 
 B.Tech Computer Science Engineering (AI & ML)
 
