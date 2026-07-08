@@ -1,74 +1,237 @@
+# 🌍 NGO Management System
 
-# NGO Management System
+> A web-based NGO Management System developed using **Core PHP**, **MySQL**, **HTML**, **CSS**, and **JavaScript** to simplify NGO operations including donor management, volunteer coordination, proposal management, donations, and reporting.
 
-This repository contains the **NGO Management System**, a comprehensive web application built with **pure PHP** and **MySQL** (SQL) for the backend. It is designed specifically for deployment and local development using **XAMPP**. The system helps NGOs manage operations efficiently, including projects, donors, beneficiaries, volunteers, events, finances, and reporting.
+> **Developed during my internship at SpaceECE India Foundation.**
 
-## Features
+---
 
-- **Project Management:** Create, monitor, and update projects.
-- **Donor Management:** Track donor information, donations, and generate receipts.
-- **Beneficiary Management:** Manage details of beneficiaries and their support history.
-- **Volunteer Management:** Recruit, schedule, and coordinate volunteers.
-- **Event Management:** Organize and manage events and campaigns.
-- **Financial Tracking:** Monitor income, expenses, and generate financial reports.
-- **User Roles:** Different roles for admins, staff, and volunteers.
-- **Reporting:** Generate various reports for transparency and impact assessment.
+## 📌 Project Overview
 
-## Technologies Used
+The NGO Management System is designed to digitize and streamline the daily operations of non-governmental organizations by providing an integrated platform for managing donors, volunteers, projects, proposals, and financial records.
 
-- **Backend:** PHP (no framework)
-- **Frontend:** HTML, CSS, JavaScript
-- **Database:** MySQL (SQL)
-- **Web Server:** Apache (via XAMPP)
+The application aims to improve transparency, efficiency, and data management while reducing manual administrative work.
 
-## Getting Started
+---
 
-### Prerequisites
+## ✨ Features
 
-- [XAMPP](https://www.apachefriends.org/index.html) installed on your system (includes Apache and MySQL)
-- Web browser
+### 🔐 Authentication
+- Admin Login
+- Volunteer Login
+- Secure Session Management
+- Logout Functionality
 
-### Installation
+### 👥 Donor Management
+- Register Donors
+- Manage Donor Profiles
+- View Donation History
+- Donor Dashboard
 
-1. **Clone or Download the repository:**
-   - Download the ZIP or run:
-     ```bash
-     git clone https://github.com/NUPUR-GLITCH/ngo_management_system.git
-     ```
-   - Copy the `ngo_management_system` folder into your `xampp/htdocs` directory.
+### 💰 Donation Management
+- Add Donations
+- Update Donation Records
+- Donation Reports
+- Fundraising Goals
 
-2. **Set up the Database:**
-   - Start **Apache** and **MySQL** from the XAMPP Control Panel.
-   - Open [http://localhost/phpmyadmin](http://localhost/phpmyadmin)
-   - Create a new database (e.g., `ngo_management`)
-   - Import the provided SQL file (if available) into the new database.  
-     *(File might be named `ngo_management.sql` in the root directory or `/database` folder)*
+### 🙋 Volunteer Management
+- Volunteer Registration
+- Volunteer Dashboard
+- Store Applications
 
-3. **Configure Database Connection:**
-   - Open the `config.php` file (or similar) in the project root or `includes` folder.
-   - Update database connection details as needed (usually host, username, password, and database name).
+### 📄 Proposal Management
+- Proposal Generator
+- Proposal Records
 
-4. **Run the Application:**
-   - Visit [http://localhost/ngo_management_system](http://localhost/ngo_management_system) in your browser.
+### 📊 Reports
+- Donation Reports
+- Financial Summary
+- NGO Statistics
 
-### Usage
+### 📞 Other Modules
+- About Page
+- Contact Page
+- Survey Module
+- Feedback System
 
-- Login as admin, staff, or volunteer to access respective features.
-- Use the navigation menu to manage projects, donors, beneficiaries, volunteers, events, financials, and reports.
+---
 
-## Contributing
+# 🛠 Technology Stack
 
-Contributions are welcome! Please open issues or pull requests for improvements or bug fixes.
+- PHP (Core PHP)
+- MySQL
+- HTML5
+- CSS3
+- JavaScript
+- Apache (XAMPP)
+
+---
+
+# 📂 Project Structure
+
+```
+NGO_Management_System
+│
+├── database/
+│   ├── db_connect.php
+│   └── ngo_db.sql
+│
+├── donation_system/
+│
+├── images/
+│
+├── index.php
+├── admin.php
+├── login.php
+├── logout.php
+├── volunteer.php
+├── volunteer_dashboard.php
+├── volunteer_signin.php
+├── about.php
+├── contact.php
+├── survey.php
+├── store_application.php
+│
+├── README.md
+└── LICENSE
+```
+
+---
+
+# 🚀 Installation
+
+## Clone Repository
+
+```bash
+git clone https://github.com/NUPUR32/NGO_Management_System.git
+```
+
+## Move Project
+
+Copy the folder into
+
+```
+xampp/htdocs/
+```
+
+## Start XAMPP
+
+Start
+
+- Apache
+- MySQL
+
+## Database Setup
+
+Open
+
+```
+http://localhost/phpmyadmin
+```
+
+Create a database
+
+```
+ngo_management
+```
+
+Import
+
+```
+database/ngo_db.sql
+```
+
+## Configure Database
+
+Update
+
+```
+database/db_connect.php
+```
+
+```php
+$host="localhost";
+$user="root";
+$password="";
+$database="ngo_management";
+```
+
+## Run Project
+
+```
+http://localhost/NGO_Management_System/
+```
+
+---
+
+# 📸 Screenshots
+
+## Home Page
+
+![Home](images/home.png)
+
+## Login Page
+
+![Login](images/login.png)
+
+## Admin Dashboard
+
+![Dashboard](images/admin-dashboard.png)
+
+## Donor Dashboard
+
+![Donor Dashboard](images/donor-dashboard.png)
+
+## Donation Management
+
+![Donation](images/donation-management.png)
+
+## Reports
+
+![Reports](images/report.png)
+
+---
+
+# 📈 Future Improvements
+
+- Online Payment Gateway
+- Email Notifications
+- Beneficiary Management
+- Event Management
+- REST API
+- Responsive UI
+- Analytics Dashboard
+
+---
+
+# 🤝 Contributing
+
+Contributions are welcome.
 
 1. Fork the repository.
-2. Create a new branch for your feature/fix.
-3. Commit your changes and push to your fork.
-4. Open a Pull Request describing your changes.
+2. Create a feature branch.
+3. Commit your changes.
+4. Push your branch.
+5. Open a Pull Request.
 
-## License
+---
 
-This project is licensed under the [MIT License](LICENSE).
+# 🙏 Acknowledgement
 
-## Contact
+This project was developed during my internship at **SpaceECE India Foundation** as part of building a digital solution for NGO management and donor engagement.
 
-For any queries or support, please create an issue or contact the maintainer: [NUPUR-GLITCH](https://github.com/NUPUR-GLITCH)
+---
+
+# 👩‍💻 Author
+
+**Nupur Joon**
+
+B.Tech Computer Science Engineering (AI & ML)
+
+University of Petroleum and Energy Studies (UPES)
+
+GitHub: https://github.com/NUPUR32
+
+---
+
+## ⭐ Star this repository if you found it useful!
